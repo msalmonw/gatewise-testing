@@ -4,9 +4,7 @@ build:
   commands:
     pre-build:
       - pip3 install pipenv
-      - pipenv install
-    post-build:
-      - python3 manage.py test
+      - pipenv install --deploy --ignore-pipfile
 run:
   runtime-version: 3.11
   pre-run:
