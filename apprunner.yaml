@@ -12,8 +12,6 @@ run:
   pre-run:
     - pip3 install pipenv
     - pipenv install
-    - python3 copy-global-files.py
-    # Add any additional pre-run commands if needed
   command: pipenv run gunicorn django_apprunner.wsgi --log-file -
   network:
     port: 8000
