@@ -10,6 +10,6 @@ run:
   pre-run:
     - pip3 install pipenv
     - pipenv install
-  command: pipenv run gunicorn django_apprunner.wsgi --log-file -
+  command: pipenv run gunicorn gatewise_camera.wsgi --log-file -
   network:
     port: 8000
