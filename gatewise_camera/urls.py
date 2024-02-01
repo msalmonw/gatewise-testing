@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("kvs-stream/", include("kvs_stream.urls")),
+    path("", include("kvs_stream.urls")),
 ]
